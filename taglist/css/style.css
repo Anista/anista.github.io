@@ -1,0 +1,114 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* main style */
+body{
+	background:rgba(169,169,169,0.1);
+}
+.wrapper, .wrapper1{
+	width:100%;
+	margin:0 auto;
+}
+.editing{
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	padding: 20px 0;
+	color:white;
+}
+.changeMode{
+	margin:40px;
+	font-size: 24px;
+	color:white;
+	padding:5px;
+	cursor:pointer;
+	font-family: sans-serif;
+}
+.tagsField{
+	margin:100px auto;
+	background:white;
+	width:70%;
+	padding:20px;
+}
+.input-field{
+	margin:20px;
+}
+.input{
+	width:50%;
+	padding:5px;
+	font-size:18px;
+	border:1px solid #CCCCCC;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.input:focus, .add-button:focus{
+	outline-color:#CCCCCC;
+}
+.add-button{
+	margin-left:0;
+	color:#525252;
+	background: #F5F5F5;
+	padding:5px;
+	font-size:18px;
+	border:1px solid #CCCCCC;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	cursor:pointer;
+	font-family: sans-serif;
+}
+.tag{
+	display:inline-block;
+	font-size: 24px;
+	padding:5px 12px 5px 12px;
+	margin:5px;
+	border-radius: 5px;
+	border-width:1px;
+	font-family: sans-serif;
+}
+.remove-tag-button{
+	display:inline-block;
+	font-size: 24px;
+	padding:5px;
+	margin-left:-12px;
+	cursor: pointer;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-left:1px solid black;
+	font-family: sans-serif;
+}
+.error{
+	display: block;
+	color: red;
+	background: #f2dede;
+	border: 1px solid red;
+	width: 22%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 5px;
+}
+/* color classes */
+.yellow{
+	background:#fcf8e3;
+	border-color:#fbeed5;
+	color:#c09853;
+}
+.green{
+	background:#dff0d8;
+	border-color:#d6e9c6;
+	color:#468847;
+}
+.red{
+	background:#f2dede;
+	border-color:#eed3d7;
+	color:#b94a48;
+}
+.blue{
+	background:#d9edf7;
+	border-color:#bce8f1;
+	color:#3a87ad;
+}
+.pink{
+	background: #f0e3fc;
+	border-color:#e5cffa; 
+	color:#a069d9;
+}

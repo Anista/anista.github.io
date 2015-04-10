@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+<head>
+	<title>GUESSING</title>
+	<link rel="stylesheet" href="style/style.css">
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="img/Owl.ico">
+	<script src='js/jquery.min.js'></script>
+</head>
+<body>
+	<div class="load-screen">
+		<div class="loader">Loading document...</div>
+	</div>
+	<div class="wrapper">
+		<div class="game_place">
+			<h1>Guess the Number</h1>
+			<div class="img-col">
+				<img src="img/Owl.jpg" alt="">
+			</div>
+			<div class="instruction">
+				<div class="instruction_title"><span>How to Play:</span></div>
+				<ul class="instruction-description">
+					<li>Mr.Smart Owl will think of a number.</li>
+					<li>You'll guess what number it is.</li>
+					<li>Mr.Smart Owl will give you a hint every time.</li>
+					<li>If you won't guess the number - you lost.</li>
+					<li>The maximum number of attempts &mdash; 10</li>
+					<li>See how many attempts it takes you to win!</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<input type="button" id='play' value='Play'>
+			<!-- appear if click on button play -->
+			<div class="playing">
+				<div class="hints">
+					<span class='hint'>I'm thinking of a number between 0 and 50. Try to guess it!</span><!--Oops!! No turns left. My number was ...-->
+					<div class="attempt">The number of remaining attempts: <span id='attemptsNumber'> </span></div>
+				</div>
+				<div class="input-form">
+					<label for="userInput"><span class='input-label'>Enter your guess: </span></label>
+					<input type="text" id="userInput" class="user-input">
+				</div>
+				<input type="button" value='Try' id='try'><input type="button" value="Escape" id='esc'>
+				<input type="button" value='Play again' id='again'>
+			</div>
+		</div>
+	</div>
+	<script src="js/guess.js"></script>
+	<script>
+	var node = document.querySelector('.game_place');
+	window.Guessing = new Guessing(node);
+	</script>
+</body>

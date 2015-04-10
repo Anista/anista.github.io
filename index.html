@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="img/label.ico">
+	<script src='js/jquery.min.js'></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<input type="checkbox" id="button">
+			<label for="button" onclick></label>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about_me">About me</a></li>
+				<li><a href="#works">My works</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="home">
+		<div class="content">
+			<div class="welcome">
+				<h1>Welcome</h1>
+			</div>
+			<h3>to my portfolio page</h3>
+			<h3><span class="stripped">My name is</span></h3>
+			<h1>Anastasia Lytvynenko</h1>
+			<h3><span class="stripped">and I'm a front-end developer</span> </h3>	
+		</div>
+	</section>
+	<section id="about_me">
+		<div class="content">
+			<div class="colomn">
+				<h4>About me</h4>
+				<p>I'm a beginner front-end developer, based in Dnipropetrovsk, Ukraine.</p>
+				<p>I am passionate about learning something new every day and keeping my knowledge up to date.</p>
+				<p>While not coding I enjoy cooking, gardening, embroidery. I go in for sports. I'm learning English and German.</p>
+			</div>
+		</div>
+	</section>
+	<section id="works">
+		<div class="content">
+			<h2>My works</h2>
+			<div class="works">
+				<ul>
+					<li class="stripped">
+						<div class="work-item" id="carousel">
+							<div class="work-title"><span>Image carousel</span></div>
+							<img src="img/small/carousel.jpg">
+						</div>
+					</li>
+					<li class="stripped">
+						<div class="work-item" id="stopwatch">
+							<div class="work-title"><span>Stopwatch</span></div>
+							<img src="img/small/stopwatch.jpg">
+						</div>
+					</li>
+					<li class="stripped">
+						<div class="work-item" id="tagList">
+							<div class="work-title"><span>Tag list</span></div>
+							<img src="img/small/taglist.jpg">
+						</div>
+					</li>
+					<li class="stripped">
+						<div class="work-item" id="formValidation">
+							<div class="work-title"><span>Form validation</span></div>
+							<img src="img/small/form.jpg">
+						</div>
+					</li>
+					<li class="stripped">
+						<div class="work-item" id="contextMenu">
+							<div class="work-title"><span>Context menu</span></div>
+							<img src="img/small/context_menu.jpg">
+						</div>
+					</li>
+					<li class="stripped">
+						<div class="work-item" id="guessing">
+							<div class="work-title"><span>Guessing</span></div>
+							<img src="img/small/guessing.jpg">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="content">
+			<h3> Contact me</h3>
+			<div class="contact-icons">
+				<div class="in"><a href="https://www.linkedin.com/in/anastasialytvynenko"><i class="fa fa-linkedin-square"></i></a></div>
+				<div class="git"><a href="https://github.com/Anista"><i class="fa fa-github-square"></i></a></div>
+				<div class="email"><a href="mailto:asya.lytvynenko.gmail.com"><i class="fa fa-envelope-square"></i></a></div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="content">
+			<span>Copyright &copy; 2015, All Rights Reserved.</span>
+			<span class="right">Coded &amp; Designed by Anastasia</span>
+		</div>
+	</footer>
+	<script src='js/script.js'></script>
+	<div class="modal">
+		<div class="modal-bg"></div>
+		<div class="modal-window stripped">
+			<div class="modal-content">
+				<div class="img-wrapper">
+					<img src="" alt="">
+				</div>
+				<div class="description">
+					<h3 class="title"></h3><!--Work title-->
+					<div class="work-descr"></div><!--Work description-->
+					<div class="work-info">
+						<!-- Information about using technologies in the work -->
+					</div>
+					<div class="bt-group">
+						<a class="bt"  id="newTab" target='_blank'>Open in a new tab <i class="fa fa-external-link"></i></a>
+						<a class="bt" href="" id="source" target='_blank'>View source <i class="fa fa-code"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
