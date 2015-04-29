@@ -64,6 +64,14 @@ $(function() {
 			information: ['html', 'css', 'js'],
 			hrefNewtab: "../guessing/index.html",
 			hrefSource: "https://github.com/Anista/anista.github.io/tree/master/guessing"
+		},
+		thePortfolio: {
+			bgUrl: "img/large/the_portfolio.jpg",
+			title: "The portfolio",
+			description: "This is a webpage converted from PSD. Used free PSD template from: www.pcklab.com",
+			information: ['html', 'css'],
+			hrefNewtab: "../thePortfolio/index.html",
+			hrefSource: "https://github.com/Anista/anista.github.io/tree/master/thePortfolio"
 		}
 	};
 	var modal = $('.modal');
