@@ -20,7 +20,7 @@ $(function() {
 		carousel: {
 			bgUrl: "img/large/carousel.jpg",
 			title: "Image carousel",
-			description: 'The autoplay image carousel widget with Jquery and CSS3. By clicking on the sidebar navigation menu there is a transition to the corresponding image. On the page can exist several carousels.',
+			description: 'The autoplay image carousel widget with jQuery and CSS3. By clicking on the sidebar navigation menu there is a transition to the corresponding image. On the page can exist several carousels.',
 			information: ['html', 'css', 'js', 'jquery'],
 			hrefNewtab: "../carousel/index.html",
 			hrefSource: "https://github.com/Anista/anista.github.io/tree/master/carousel"
