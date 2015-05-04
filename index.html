@@ -6,13 +6,19 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="img/label.ico">
-	<script src='js/jquery.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-61443150-1', 'auto');
+	ga('send', 'pageview');
+	</script>
 </head>
 <body>
 	<header>
 		<nav>
-			<input type="checkbox" id="button">
-			<label for="button" onclick></label>
 			<ul>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about_me">About me</a></li>
@@ -22,14 +28,17 @@
 		</nav>
 	</header>
 	<section id="home">
-		<div class="content">
-			<div class="welcome">
+		<div class="wrapper">
+			<div class="onecolor"></div>
+			<div class="deco-line"></div>
+			<div class="strip"></div>
+			<div class="home-text">
 				<h1>Welcome</h1>
-			</div>
-			<h3>to my portfolio page</h3>
-			<h3><span class="stripped">My name is</span></h3>
-			<h1>Anastasia Lytvynenko</h1>
-			<h3><span class="stripped">and I'm a front-end developer</span> </h3>	
+				<h3>to my portfolio page</h3>
+				<h3>My name is</h3>
+				<h1>Anastasia Lytvynenko</h1>
+				<h3>and I'm a front-end developer</h3>	
+			</div>	
 		</div>
 	</section>
 	<section id="about_me">
@@ -47,43 +56,43 @@
 			<h2>My works</h2>
 			<div class="works">
 				<ul>
-					<li class="stripped">
+					<li class="striped">
 						<div class="work-item" id="carousel">
 							<div class="work-title"><span>Image carousel</span></div>
 							<img src="img/small/carousel.jpg">
 						</div>
 					</li>
-					<li class="stripped">
+					<li class="striped">
 						<div class="work-item" id="stopwatch">
 							<div class="work-title"><span>Stopwatch</span></div>
 							<img src="img/small/stopwatch.jpg">
 						</div>
 					</li>
-					<li class="stripped">
+					<li class="striped">
 						<div class="work-item" id="tagList">
 							<div class="work-title"><span>Tag list</span></div>
 							<img src="img/small/taglist.jpg">
 						</div>
 					</li>
-					<li class="stripped">
+					<li class="striped">
 						<div class="work-item" id="formValidation">
 							<div class="work-title"><span>Form validation</span></div>
 							<img src="img/small/form.jpg">
 						</div>
 					</li>
-					<li class="stripped">
+					<li class="striped">
 						<div class="work-item" id="contextMenu">
 							<div class="work-title"><span>Context menu</span></div>
 							<img src="img/small/context_menu.jpg">
 						</div>
 					</li>
-					<li class="stripped">
+					<li class="striped">
 						<div class="work-item" id="guessing">
 							<div class="work-title"><span>Guessing</span></div>
 							<img src="img/small/guessing.jpg">
 						</div>
 					</li>
-					<li class="stripped">
+					<li class="striped">
 						<div class="work-item" id="thePortfolio">
 							<div class="work-title"><span>The Portfolio</span></div>
 							<img src="img/small/the_portfolio.jpg">
@@ -97,8 +106,8 @@
 		<div class="content">
 			<h3> Contact me</h3>
 			<div class="contact-icons">
-				<div class="in"><a href="https://www.linkedin.com/in/anastasialytvynenko"><i class="fa fa-linkedin-square"></i></a></div>
-				<div class="git"><a href="https://github.com/Anista"><i class="fa fa-github-square"></i></a></div>
+				<div class="in"><a href="https://www.linkedin.com/in/anastasialytvynenko" target='_blank'><i class="fa fa-linkedin-square"></i></a></div>
+				<div class="git"><a href="https://github.com/Anista" target='_blank'><i class="fa fa-github-square"></i></a></div>
 				<div class="email"><a href="mailto:asya.lytvynenko.gmail.com"><i class="fa fa-envelope-square"></i></a></div>
 			</div>
 		</div>
@@ -112,7 +121,7 @@
 	<script src='js/script.js'></script>
 	<div class="modal">
 		<div class="modal-bg"></div>
-		<div class="modal-window stripped">
+		<div class="modal-window striped">
 			<div class="modal-content">
 				<div class="img-wrapper">
 					<img src="" alt="">

@@ -2,10 +2,14 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
 /* main style */
+html{
+	font-size: 14px;
+}
 body{
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	font-family: Verdana, sans-serif; 
 }
 .center{
 	margin:0 auto;
@@ -15,7 +19,7 @@ body{
 	width: 70%; 
 	display:block;
 }
-/* heading style h1,h2,h3... */
+/* heading styles h1,h2,h3... */
 h1,h2,h3,h4{
 	padding:10px;
 	text-align: center;
@@ -27,26 +31,32 @@ h2,h3{
 	font-family:Comic Sans, Comic Sans MS, cursive;
 }
 h1{
-	font-size:74px;
-	color:white;
-	text-shadow: 2px 2px 2px #52706A;
-	text-transform: uppercase;
+	font-size:5.5rem;
+	text-transform: uppercase; 
+	color: white;
+	text-shadow:
+	3px 3px 0 #52706A,
+	-1px -1px 0#52706A,  
+	1px -1px 0 #52706A,
+	-1px 1px 0 #52706A,
+	1px 1px 0 #52706A;
+	transition: all 1s;
 }
 h2{
-	font-size: 70px;
+	font-size: 5rem;
 	text-transform: uppercase;
 	color:white;
 }
 h3{
-	font-size: 34px;
+	font-size: 2.4rem;
 	color:#52706A;
 }
 h4{
 	color:#52706A;
-	font-size: 30px;
+	font-size: 2.2rem;
 }
 p{
-	font-size: 24px;
+	font-size: 1.7rem;
 	line-height: 30px;
 	color:#52706A;
 	margin:20px;
@@ -58,34 +68,23 @@ p{
 	clear:both;
 	width:100%;
 }
-/* decorations */
-.line{
-	width:100%;
-	height:20px;
-	margin-bottom: 20px;
-}
 /* class to add striped background */
-.stripped {
+.striped {
 	display:block;
 	margin:0;
-	background-image: -webkit-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
-	background-image: -moz-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
-	background-image: -o-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
-	background-image: repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
-	-webkit-background-size: 4px 4px;
-	-moz-background-size: 4px 4px;
-	background-size: 4px 4px;
+	background:url("../img/lstr.gif");
 }
 header{
 	width:100%;
-	background:url('../img/header-bg.png');
-	height: 80px; 	
+	background: rgba(0,0,0,0.5);
+	height: 60px; 	
 	position: fixed;
+	z-index:9999;
 }
 /* navigation */
 header nav{
 	float:right;
-	margin-top:20px;
+	margin-top:10px;
 	margin-right:20px;
 	position:relative;
 }
@@ -107,12 +106,39 @@ header nav li a:hover{
 	text-decoration: underline;
 	color:#ffffff;
 }
-.welcome{
-	margin-bottom:-10px;
+.wrapper{
+	height:100vh;
+}
+.onecolor{
+	height:48vh;
+	background-color:#75E6CF;
+}
+.deco-line{
+	height:4vh;
+	background: #fff;
+	outline:3px solid #468A7C;
+}
+.strip{
+	background: url("../img/str.gif");
+	height: 48vh;
+}
+.home-text{
+	width:80vw;
+	margin:0 auto;
+	background:#fff;
+	position:absolute;
+	left:10vw;
+	top:24vh;
+	border:3px solid #468A7C;
+	border-radius: 10px;
+	padding-top:8vh;
+	padding-bottom:8vh;
+	overflow: hidden;
 }
 /* sections */
 section{
 	padding:300px 0;
+	position: relative;
 }
 .colomn{
 	width:70%;
@@ -123,12 +149,13 @@ section{
 }
 #home{
 	background-color:#75E6CF;
+	padding:0;
 }
 #works{
 	background:#75E6CF;
 	padding-top:200px;
 }
-/* my works */
+/* my works section */
 .works{
 	width:100%;
 	margin-top:10px;
@@ -216,27 +243,14 @@ footer .right{
 
 
 
-/* _________________ */
-input[type=checkbox] {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
+/* style for small devices */
 
-label { 
-  display:none;
-  cursor: pointer;
-  user-select:none;
-} 
 @media (max-width: 900px){
-	#home{
-		background:lightgreen;
+	html{
+		font-size: 10px;
 	}
 	section{
 		padding:35% 0px;
-	}
-	p{
-		font-size: 
 	}
 	.content{
 		width:90%;
@@ -247,82 +261,41 @@ label {
 	h1,h3{
 		padding:5px;
 	}
-	h1{
-		font-size: 4.2em;
-	}
-	h3{
-		font-size: 1.8em;
+	.home-text{
+		padding:5vh 0;
 	}
 	p{
-		font-size: 16px;
-		line-height: 20px;
+		font-size: 2rem;
 	}
-} 
+	#contact {
+		padding: 8vh 0;
+	} 
+}
+
 @media (max-width:500px){
-	#home{
-		background: lightblue;
+	html{
+		font-size: 8px;
 	}
-	h1{
-		font-size: 2.5em;
-	}
-	h3{
-		font-size: 1.2em;
+	.home-text{
+		padding:3vh 0;
 	}
 	p{
-		font-size: 14px;
-		line-height: 18px;
+		font-size: 2rem;
+	}
+	#contact .in, #contact .email, #contact .git, #contact .skype{
+		width:50px;
+		height:50px;
+		font-size:50px;
 	}
 	header{
 		height:60px;
 	}
 	header nav ul{
 		display:none;
-    	height:100%;
-    	margin:0px;
-    	background: url('../img/header-bg.png');
+		height:100%;
+		margin:0px;
+		background: url('../img/header-bg.png');
 	}
-	label {
-      position:relative;
-      display:block;
-      width:100%;
-      min-height:60px;
-      font-size:30px;
-      margin:0;
-      border-bottom:1px solid black;
-    }
-    
-    label:after {
-      position: absolute;
-      right: .25em;  
-      top: 0; 
-      content:"\2261";
-      font-size:1.8em;
-    }
-    input[type=checkbox]:checked ~ ul{
-      display:block;
-      width:100%;
-        }
-        header nav{
-        	width:100%;
-        	margin:0;
-        }
-      header nav ul li{
-        width:100%;
-        opacity:.8;
-        text-align:left;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 /*  styles for modal window */
@@ -381,7 +354,7 @@ label {
 }
 .description .title{
 	margin: 10% 10% 2%;
- 	border-bottom: 3px solid #52706A;
+	border-bottom: 3px solid #52706A;
 }
 .work-info{
 	margin:2% 10%;
@@ -396,14 +369,15 @@ label {
 	display: inline-block;
 	padding: 10px;
 	margin:10px;
+	font-size: 1.3rem;
 	background: #468A7C;
 	border-radius: 5px;
 	color: white;
 	font-family: Verdana, sans-serif;
 	text-transform: uppercase;
 }
- .bt-group{
- 	margin-bottom:10px;
+.bt-group{
+	margin-bottom:10px;
 } 
 .bt{
 	display:inline-block;
@@ -422,7 +396,4 @@ label {
 	text-decoration: underline;
 	cursor:pointer;
 }
-
-
-
 

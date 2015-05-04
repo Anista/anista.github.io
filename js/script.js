@@ -1,7 +1,7 @@
 'use strict';
 /*function to animate scrolling on page*/
 $(function() {
-	$('a').click(function() {
+	$('header>nav a').click(function() {
 		if (this.hash) {
 			var hash = this.hash.substr(1);
 			var $toElement = $('section[id=' + hash + ']');
@@ -122,10 +122,10 @@ $(function() {
 $(function (){
 	var work = $('.work-item');
 	work.on('mouseenter', function(){
-		$(this).find('.work-title').fadeIn('slow');
-	})
+		$(this).find('.work-title').fadeIn(400);
+	});
 	work.on('mouseleave', function(){
-		$(this).find('.work-title').fadeOut('slow');
-	})
+		$(this).find('.work-title').fadeOut(400);
+	});
 return false;
 });
