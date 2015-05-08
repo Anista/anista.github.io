@@ -76,7 +76,7 @@ $(function() {
 		constellation: {
 			bgUrl: "img/large/constellation.jpg",
 			title: "Constellation",
-			description: "This is a website converted from PSD. Used free PSD template from: dribbble.com. It consist of Home page and Post page. Also created menu using Native JS.",
+			description: "This is a website converted from PSD. Used free PSD template from: dribbble.com. It consists of Home page and Post page. Also created menu using Native JS.",
 			information: ['html', 'css', 'js'],
 			hrefNewtab: "../constellation/index.html",
 			hrefSource: "https://github.com/Anista/anista.github.io/tree/master/constellation"
