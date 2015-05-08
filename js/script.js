@@ -105,16 +105,16 @@ $(function() {
 	//show modal window 
 	function showModal(work) {
 		modal.fadeIn('slow');
-		img.attr('src', work.bgUrl);
-		title.text(work.title);
-		workDescr.text(work.description);
-		for (var i = 0; i < work.information.length; i++) {
-			var inf = $('<span></span>').addClass('inf').text(work.information[i]);
-			workInfo.append(inf);
-		}
-		btNewTab.attr('href', work.hrefNewtab);
-		btSource.attr('href', work.hrefSource);
-		modalOpened = true;
+			img.attr('src', work.bgUrl);
+			title.text(work.title);
+			workDescr.text(work.description);
+			for (var i = 0; i < work.information.length; i++) {
+				var inf = $('<span></span>').addClass('inf').text(work.information[i]);
+				workInfo.append(inf);
+			}
+			btNewTab.attr('href', work.hrefNewtab);
+			btSource.attr('href', work.hrefSource);
+			modalOpened = true;
 	}
 	//function to hide modal window
 	function hideModal() {
@@ -135,5 +135,5 @@ $(function (){
 	work.on('mouseleave', function(){
 		$(this).find('.work-title').fadeOut(400);
 	});
-	return false;
+return false;
 });
