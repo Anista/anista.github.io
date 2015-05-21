@@ -1,7 +1,8 @@
 'use strict';
 /*function to animate scrolling on page*/
 $(function() {
-	$('header>nav a').click(function() {
+	$('header>nav a').click(function(e) {
+		e.preventDefault();
 		if (this.hash) {
 			var hash = this.hash.substr(1);
 			var $toElement = $('section[id=' + hash + ']');
@@ -80,6 +81,14 @@ $(function() {
 			information: ['html', 'css', 'js'],
 			hrefNewtab: "../constellation/index.html",
 			hrefSource: "https://github.com/Anista/anista.github.io/tree/master/constellation"
+		},
+		arcadia: {
+			bgUrl: "img/large/arcadia.jpg",
+			title: "Arcadia",
+			description: "This is a website converted from PSD. Used free PSD template from: dribbble.com. Also created menu and smoth scrolling using JS and jQuery.",
+			information: ['html', 'css', 'js', 'jQuery','bootstrap'],
+			hrefNewtab: "../arcadia/index.html",
+			hrefSource: "https://github.com/Anista/anista.github.io/tree/master/arcadia"
 		}
 	};
 	var modal = $('.modal');
