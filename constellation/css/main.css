@@ -215,6 +215,7 @@ footer .social{
 	left:-25%;
 	height:100%;
 	z-index: 1000;
+	overflow: auto;
 }
 .close{
 	float:right;
