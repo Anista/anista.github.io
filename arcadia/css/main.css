@@ -211,7 +211,7 @@ h4{
 	color:#c59a6d;
 	background: #fff;
 }
-.carousel{
+.slider{
 	width:100%;
 	background: gray;
 	height:360px;
@@ -220,7 +220,7 @@ h4{
 	overflow: hidden;
 	display: block;
 }
-.carousel-wrapper{
+.slider-wrapper{
 	width:4000px;
 	margin-left: -130px;
 }
@@ -371,28 +371,28 @@ h4{
 .tweets p{
 	color:#fff;
 }
-.slider-wrapper{
-	overflow: hidden;
-	width:100%;
+/* Tweets carousel */
+.carousel-indicators li{
+	height:12px;
+	width:12px;
+	margin:0 7px;
+	border:1px solid #c59a6d;
+	cursor:pointer;
+	border-radius: 0;
+}
+.carousel-indicators .active{
+	margin:0 7px;
+	background: #c59a6d;
+}
+.carousel-caption{
+	position: static;
 }
 .autor{
+	margin-top:30px;
+	display: block;
 	font-size: 0.75rem;
 	font-weight: 700;
 	text-transform: uppercase;
-}
-.slider-nav{
-	margin-top:50px;
-}
-.nav-item{
-	height:10px;
-	width:10px;
-	border:1px solid #c59a6d;
-	display:inline-block;
-	margin:0 7px;
-	cursor:pointer;
-}
-.slider-nav .active{
-	background: #c59a6d;
 }
 /* Contact section */
 .contact{

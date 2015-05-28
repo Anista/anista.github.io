@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<header>
@@ -96,8 +97,8 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, architecto consequuntur qui aliquam, voluptates quis animi adipisci quas aut eligendi, inventore quam cupiditate rem alias ratione iusto. Architecto, reiciendis, amet!Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
 			</p>
 		</div>
-		<div class="carousel">
-			<div class="carousel-wrapper">
+		<div class="slider">
+			<div class="slider-wrapper">
 				<div class="item"><img src="img/slide1.jpg" alt="">
 					<div class="item-descr center">
 						<span class="brand">Brand</span>
@@ -209,17 +210,38 @@
 			<div class="container center">
 				<h3>Latest tweets</h3>
 				<span class="deco-line"></span>
-				<div class="slider-wrappper">
-					<div class="slider">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto obcaecati, expedita accusantium eligendi aut aspernatur sapiente quidem.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-						<div class="autor">Author</div>
-					</div>
-				</div>
-				<div class="slider-nav center">
-					<span class="nav-item"></span>
-					<span class="nav-item active"></span>
-					<span class="nav-item"></span>
-					<span class="nav-item"></span>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="carousel-caption">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi adipisci eaque hic, neque quo modi. Accusantium quidem architecto debitis facere ullam temporibus, dolor sit officiis, voluptatibus eveniet. Dicta dolores, neque.
+									<span class="autor">Author</span>
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-caption">
+								<p>
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+									<span class="autor">Author</span>
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-caption">
+								<p>
+									Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+									<span class="autor">Author</span>
+								</p>
+							</div>
+						</div>
+					</div>	
 				</div>
 			</div>
 		</div>
