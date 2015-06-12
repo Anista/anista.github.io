@@ -127,8 +127,28 @@ h1{
 .share{
 	float:right;
 }
-.share img{
-	height:20px;
+.share a{
+	display: inline-block;
+	height:23px;
+	overflow: hidden;
+}
+.share-email,
+.share-f,
+.share-tw{
+	background: url('../img/share.png');
+	background-repeat: no-repeat;
+}
+.share-email{
+	width:32px;
+	background-position: 0px 0px;
+}
+.share-f{
+	width:20px;
+	background-position: -40px 0px;
+}
+.share-tw{
+	width:25px;
+	background-position: -67px 0px;
 }
 .more{
 	width:100%;
