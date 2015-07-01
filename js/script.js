@@ -89,6 +89,14 @@ $(function() {
 			information: ['html', 'css', 'js', 'jQuery','bootstrap'],
 			hrefNewtab: "../arcadia/index.html",
 			hrefSource: "https://github.com/Anista/anista.github.io/tree/master/arcadia"
+		},
+		restaurantMenu: {
+			bgUrl: "img/large/restaurantMenu.jpg",
+			title: "Restaurant menu",
+			description: "This is a webpage converted from PSD. Used CSS3 properties. All web browsers support.",
+			information: ['html', 'css', 'css3'],
+			hrefNewtab: "../restaurantMenu/index.html",
+			hrefSource: "https://github.com/Anista/anista.github.io/tree/master/restaurantMenu"
 		}
 	};
 	var modal = $('.modal');

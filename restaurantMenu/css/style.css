@@ -1,0 +1,350 @@
+/*=======================
+* Reset CSS
+* Eric Meyer's Reset CSS v2.0 - http://cssreset.com 
+* =======================
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {border: 0;font-size: 100%;font: inherit;vertical-align: baseline;margin: 0;padding: 0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display: block}body {line-height: 1}ol,ul {list-style: none}blockquote,q {quotes: none}blockquote: before,blockquote: after,q:before,q:after {content: none}table {border-collapse: collapse;border-spacing: 0}
+
+/*=======================
+* Main style 
+* =======================
+*/
+@font-face {
+	font-family: 'Lobster';
+	src: url('Lobster.eot'); /* for IE8 */
+	src: url('Lobster.otf');
+}
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #fff;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 1050px;
+	height: 100%;
+	min-height: 1500px;
+	background: url("../img/bg-dark.jpg");
+}
+
+.inner-wrapper {
+	position: absolute;
+	z-index: 100;
+	height: 100%;
+	width: 1050px;
+}
+
+/*=======================
+* Lines
+* =======================
+*/
+
+.lines {
+	margin: 0 auto;
+	height: 100%;
+	width: 553px;
+}
+
+.line {
+	display: inline-block;
+	float: left;
+	height:100%;
+	width:79px;
+}
+
+.first {background: #f75e50;}
+
+.second {background: #eac761;}
+
+.third {background: #e8df9c;}
+
+.fourth {background: #91c09e;}
+
+.fifth {background: #dcd180;}
+
+.sixth {background: #dba382;}
+
+.seventh {background: #b5b564;}
+
+/*=======================
+* Header menu
+* =======================
+*/
+
+.menu-wrapper {
+	position: relative;
+	margin-top: 240px;
+	margin-bottom: 150px;
+	height: 200px;
+}
+
+.menu-title {
+	position: absolute;
+	top: 60px;
+	left: 360px;
+	font-size: 120px;
+	font-family: 'Lobster', cursive;
+	color:#825a3e;
+	cursor: pointer;
+}
+
+/*   Blocks to create hexagon  */
+
+.hexagon {
+	position: absolute;
+	top: -3px;
+	left: 8px;
+	width: 1048px;
+	height: 250px;
+	overflow: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.9961946980917455, M12=-0.08715574274765832, M21=0.08715574274765832, M22=0.9961946980917455, SizingMethod='auto expand')";/* For IE8+ */
+	-moz-transform:    rotate(5deg);;
+	-o-transform:      rotate(5deg);;
+	-webkit-transform: rotate(5deg);;
+	transform: rotate(5deg);
+	z-index: 5;
+	border-left: 1px solid #7d7769;
+	border-right: 1px solid #7d7769;
+	background: url("../img/bg-light.jpg");
+}
+
+.hexagon-1 {
+	position: absolute;
+	top: -32px;
+	left: -8px;
+	width: 1070px;
+	height: 245px;
+	overflow: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.9961946980917455, M12=-0.08715574274765832, M21=0.08715574274765832, M22=0.9961946980917455, SizingMethod='auto expand')";/* For IE8+ */
+	-moz-transform:    rotate(5deg);;
+	-o-transform:      rotate(5deg);;
+	-webkit-transform: rotate(5deg);;
+	transform: rotate(5deg);
+	z-index: 3;	
+}
+
+.hexagon-2 {
+	position: absolute;
+	top: 0;
+	width: 1070px;
+	height: 245px;
+	overflow: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.9848077530122081, M12=0.17364817766692991, M21=-0.17364817766692991, M22=0.9848077530122081, SizingMethod='auto expand')";/* For IE8+ */
+	-moz-transform:    rotate(-10deg);;
+	-o-transform:      rotate(-10deg);;
+	-webkit-transform: rotate(-10deg);;
+	transform: rotate(-10deg);
+}
+
+/*   Chevron top  */
+
+.chevron-top {
+	position: relative;
+	top: -20px;
+	height: 15px;
+	width: 1050px;
+	z-index: 100;
+	text-align: center;
+}
+
+.chevron-top:before, .chevron-top:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	border-bottom: 1px solid #7d7769;
+	background: #f7efe1;
+	-webkit-box-shadow: 0 -6px 8px -7px #825a3e;
+	-moz-box-shadow: 0 -6px 8px -7px #825a3e;
+	box-shadow: 0 -6px 8px -7px #825a3e;
+}
+
+.chevron-top:before {
+	left: 0;
+	padding-right: 1px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=-0.08748866352592455, M22=1, SizingMethod='auto expand')"; /* For IE8+ */
+	-moz-transform:    skew(0deg, -5deg);
+	-o-transform:      skew(0deg, -5deg);
+	-webkit-transform: skew(0deg, -5deg);
+	transform:         skew(0deg, -5deg);
+}
+
+.chevron-top:after {
+	right: 0;
+	padding-left: 1px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0.08748866352592415, M22=1, SizingMethod='auto expand')"; /* For IE8+ */
+	-moz-transform:    skew(0deg, 5deg);
+	-o-transform:      skew(0deg, 5deg);
+	-webkit-transform: skew(0deg, 5deg);
+	transform:         skew(0deg, 5deg);
+}
+
+/*   Chevron bottom   */
+
+.chevron-bottom {
+	position: relative;
+	top: 175px;
+	height: 15px;
+	width: 1050px;
+	z-index: 102;
+	text-align: center;
+}
+
+.chevron-bottom:before, .chevron-bottom:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	border-top: 1px solid #7d7769;
+	background: #f7efe1;
+	-webkit-box-shadow: 0 6px 8px -7px #825a3e;
+	-moz-box-shadow: 0 6px 8px -7px #825a3e;
+	box-shadow: 0 6px 8px -7px #825a3e;
+}
+
+.chevron-bottom:before {
+	left: 0;
+	padding-right: 1px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0.08748866352592415, M22=1, SizingMethod='auto expand')"; /* For IE8+ */
+	-moz-transform:    skew(0deg, 5deg);
+	-o-transform:      skew(0deg, 5deg);
+	-webkit-transform: skew(0deg, 5deg);
+	transform:         skew(0deg, 5deg);
+}
+.chevron-bottom:after {
+	right: 0;
+	padding-left: 1px;
+	background: #f7efe1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=-0.08748866352592455, M22=1, SizingMethod='auto expand')"; /* For IE8+ */
+	-moz-transform:    skew(0deg, -5deg);
+	-o-transform:      skew(0deg, -5deg);
+	-webkit-transform: skew(0deg, -5deg);
+	transform:         skew(0deg, -5deg);
+}
+
+/*=======================
+* Restaurant ribbon
+* =======================
+*/
+
+.restaurant-wrapper{
+	margin-right:auto;
+	margin-left: auto;
+	width: 586px;
+}
+
+.ribbon { 
+	position: relative; 
+	margin: 0 0 48px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	text-align: center; 
+	font-size: 62px; 
+	font-family: 'Lobster', cursive;
+	color: #fff; 
+	-moz-text-shadow: 0 3px #1c1a16;
+	-webkit-text-shadow: 0 3px #1c1a16;
+	text-shadow: 0 3px #1c1a16;
+	background: #6c6656; 
+	cursor: default;
+} 
+
+.ribbon:before, .ribbon:after { 
+	content: ""; 
+	position: absolute; 
+	bottom: -20px;
+	display: block; 
+	border: 48px solid #635d4e;
+	z-index: -1; 
+} 
+
+.ribbon:before { 
+	left: -62px;
+	border-right-width: 50px; 
+	border-left-width: 30px;
+	border-left-color: transparent; 
+} 
+
+.ribbon:after { 
+	right: -62px;
+	border-left-width: 50px;
+	border-right-width:30px;
+	border-right-color: transparent; 
+} 
+
+.ribbon-content:before, .ribbon-content:after { 
+	content: ""; 
+	position: absolute; 
+	bottom: -20px;
+	display: block; 
+	border-style: solid; 
+	border-color: #4a4435 transparent transparent transparent; 
+} 
+
+.ribbon-content:before { 
+	left: -1px; 
+	border-width: 20px 0 0 18px;
+} 
+
+.ribbon-content:after { 
+	right: -1px; 
+	border-width: 20px 18px 0 0;
+}
+
+
+/*=======================
+* Buttons block
+* =======================
+*/
+
+.buttons-wrapper {
+	margin-top:230px;
+	width:100%;
+	padding: 14px 0;
+	background: #f7efe1;
+	-webkit-box-shadow: 0 6px 8px -7px #825a3e;
+	-moz-box-shadow: 0 6px 8px -7px #825a3e;
+	box-shadow: 0 6px 8px -7px #825a3e, 0 -6px 8px -7px #825a3e;
+}
+
+.buttons {
+	height: 270px;
+	border-top: 1px solid #7d7769;
+	border-bottom: 1px solid #7d7769;
+	list-style: none;
+	text-align: center;
+	background: url("../img/bg-light.jpg");
+}
+
+.bt {
+	display: inline-block;
+	width: 190px;
+	height: 122px;
+	margin: 70px 5px;
+	background: url("../img/buttons.png");
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.bt a {
+	display: block;
+	height: 100%;
+}
+
+.bt-1 {	background-position: 8px 0;}
+
+.bt-2 {	background-position: -196px 0;}
+
+.bt-3 {	background-position: -400px 0;}
+
+.bt-1:hover { background-position: 8px -122px;}
+
+.bt-2:hover { background-position: -196px -122px;}
+
+.bt-3:hover { background-position: -400px -122px;}
