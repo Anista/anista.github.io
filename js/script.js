@@ -97,6 +97,14 @@ $(function() {
 			information: ['html', 'css', 'css3'],
 			hrefNewtab: "../restaurantMenu/index.html",
 			hrefSource: "https://github.com/Anista/anista.github.io/tree/master/restaurantMenu"
+		},
+		mooovies: {
+			bgUrl: "img/large/mooovies.jpg",
+			title: "Mooovies",
+			description: "It's an web application created using Bootstrap classes and layout, AngularJS framework and Firebase as a back-end. Admin can add and edit movies, approve users comments before they are shown on the page. Users can add comments, like movies and search for movies by title. ",
+			information: ['bootstrap', 'AngularJS', 'firebase'],
+			hrefNewtab: "https://movies-c2f1d.firebaseapp.com/",
+			hrefSource: "https://github.com/Anista/anista.github.io/tree/master/mooovies"
 		}
 	};
 	var modal = $('.modal');

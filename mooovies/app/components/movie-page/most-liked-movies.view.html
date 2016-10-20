@@ -1,0 +1,15 @@
+<h4>Most liked movies</h4>
+<div class="panel panel-default" ng-repeat="movie in movies | orderBy:'numberOfLikes':true">
+	<div class="panel-body" ng-click="goToMovie(movie)" style="cursor: pointer;">
+		<div class="row">
+			<div class="col-sm-6 text-center">
+				<img ng-src="{{ movie.imgUrl }}" alt="" style="max-height:70px; max-width:100px;">
+			</div>
+			<div class="col-sm-6">
+				<h4 ng-bind="movie.title"></h4>
+				<span class="glyphicon glyphicon-heart-empty"></span>
+				<span ng-bind="movie.numberOfLikes"></span>
+			</div>
+		</div>
+	</div>
+</div>

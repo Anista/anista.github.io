@@ -1,0 +1,13 @@
+.plus-margin {
+	margin-bottom: 40px;
+}
+
+.nav>li>a:hover {
+	text-decoration: underline;
+	background-color: #fff;
+}
+
+.img-rounded {
+	max-height: 300px;
+	min-width: 200px;
+}

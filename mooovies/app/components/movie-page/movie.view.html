@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="app/components/movie-page/movie.view.style.css">
+<div class="container">
+
+	<nav-panel></nav-panel>
+
+	<div class="row plus-margin">
+		<div class="col-sm-4 text-center">
+			<img ng-src="{{selectedMovie.imgUrl}}" alt="" class="main-movie img-responsive">
+		</div>
+		<div class="col-sm-8" ng-if="!editMode">
+			<h2 ng-bind="selectedMovie.title"></h2>
+			<p class="plus-margin" ng-bind="selectedMovie.description"></p>
+			<p>
+				<span class="glyphicon" ng-click="toggleLike()" ng-class="{'glyphicon-heart':likedByMe, 'glyphicon-heart-empty':!likedByMe}"></span>
+				<span ng-bind="selectedMovie.numberOfLikes"></span>
+				<span class="glyphicon glyphicon-comment"></span>
+				<span ng-bind="selectedMovie.numberOfComments"></span>
+				<span class="glyphicon glyphicon-calendar"></span>
+				<span ng-bind="selectedMovie.date"></span>
+			</p>
+			<button class="btn btn-default" ng-click="changeMode()" ng-if="$root.isAdmin">Edit movie data</button>
+		</div>
+		<div class="col-sm-8" ng-if="editMode">
+			<input type="text" class="form-control" ng-model="editedMovie.title">
+			<textarea cols="30" rows="6" class="form-control plus-margin" ng-model="editedMovie.description"></textarea>
+			<button class="btn btn-default" ng-click="changeMode()">Cancel</button>
+			<button class="btn btn-primary" ng-click="saveMovie()">Save</button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<movie-comments movie-id="movieId"></movie-comments>
+		</div>
+		<div class="col-sm-4 col-sm-offset-2">
+			<most-liked-movies></most-liked-movies>
+		</div>
+	</div>
+</div>
