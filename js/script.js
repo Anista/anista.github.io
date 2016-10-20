@@ -85,7 +85,7 @@ $(function() {
 		arcadia: {
 			bgUrl: "img/large/arcadia.jpg",
 			title: "Arcadia",
-			description: "This is a website converted from PSD. Used free PSD template from: dribbble.com. Also created menu and smoth scrolling using JS and jQuery.",
+			description: "This is a website converted from PSD. Used free PSD template from: dribbble.com. Created menu and smoth scrolling using JS and jQuery. Also created carousel using Bootstrap.",
 			information: ['html', 'css', 'js', 'jQuery','bootstrap'],
 			hrefNewtab: "../arcadia/index.html",
 			hrefSource: "https://github.com/Anista/anista.github.io/tree/master/arcadia"
